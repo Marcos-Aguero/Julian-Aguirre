@@ -1,0 +1,74 @@
+footer {
+    background-color: #f3dfbf;
+    color: rgb(0, 0, 0);
+    font-family: 'montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+
+    
+
+    .seccion-izq{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25%;
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30%;
+        }
+        .logo2 {
+            width: 150%;
+        }
+    }
+
+    #seccion-der {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 9.5rem;
+        
+        a {
+            position: relative;
+            display: block;
+            text-decoration: none;
+            padding: 0.4rem;
+        }
+        
+        .info {
+            padding-bottom: 0.5rem;
+        }
+
+    }
+
+    #seccion-cen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1.5rem 12rem;
+
+        .redes {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        
+        .face {
+            width: 2rem;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width:320px) and (max-width:1440px) {
+    footer {
+        #seccion-der {
+            display: none;
+        }
+    }
+}
+

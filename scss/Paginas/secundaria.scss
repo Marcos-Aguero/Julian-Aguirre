@@ -1,0 +1,91 @@
+@import '../colores/colores.scss';
+
+/* primera seccion */
+
+.primera-seccion-secundaria {
+    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url("../img/cooperadora.jpg") no-repeat center/cover;
+    background-attachment: fixed;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#primer-contenido-secundaria>h1 {
+    font-family: 'montserrat', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 7px 7px 7px map-get($color, quinto);
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: map-get($color, cuarto);
+    display: flex;
+    justify-content: center;
+}
+
+/* fin de primara seccion */
+
+/* segunda seccion */
+
+.segundo-contenido-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #cbdff7b2;
+    padding-bottom: 4rem;
+    p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        text-align: justify;
+    }
+}
+
+/* fin de segunda seccion */
+
+/* tercera seccion */
+
+.tercera-seccion-sec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+    background-color: #b0d0f5;
+    #seccion-izq-sec {
+        width: 50%;
+        .actividades-sec {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: center;
+                padding-top: 1.8rem;
+                width: 80%;
+            }
+            .act-sec {
+                width: 42vw;
+            }
+        }
+    }
+    #seccion-der-sec {
+        width: 50%;
+        .mas-actividades-sec {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            p {
+                width: 80%;
+                letter-spacing: normal;
+                padding-top: 3rem;
+            }
+        }
+    }
+}
+
+/* fin de tercera seccion */
+
+.card-body a{
+    width: 50%;
+}

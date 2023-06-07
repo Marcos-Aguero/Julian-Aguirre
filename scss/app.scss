@@ -1,0 +1,81 @@
+
+/* configuraciones generales*/
+
+@import './media-Query/mediaquerie.scss';
+@import './super-navbar/nav.scss';
+@import './footer/footer.scss';
+@import './colores/colores.scss';
+
+/* páginas*/
+
+@import './Paginas/Inicio.scss';
+@import './Paginas/primaria.scss';
+@import './Paginas/secundaria.scss';
+@import './Paginas/nosotros.scss';
+@import './Paginas/contacto.scss';
+@import './media-Query/mediaquerie.scss';
+
+/*  configuraciones generales  */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+.h-generales {
+    font-family: 'montserrat', sans-serif;
+    text-transform: uppercase;
+    color: map-get($color, tercero);
+    font-weight: 650;
+    text-align: center;
+}
+h3 {
+    @extend .h-generales;
+    text-shadow: 4px 4px 7px rgba(58, 58, 58, 0);
+    margin: 4rem;
+    &.h3 {
+        font-size: calc(1.5rem + 1vw);
+    }
+}
+@media (min-width: 1200px) {
+    .h3, h3 {
+    font-size: 2.35rem;
+    }
+}
+
+h4 {
+    @extend .h-generales;
+    text-shadow: 2px 2px 7px rgba(58, 58, 58, 0);
+    font-size: 2rem;
+    margin: 4rem;
+}
+h6 {
+    @extend .h-generales;
+    text-shadow: 2px 2px 7px rgba(58, 58, 58, 0);
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+/* boton hacia arriba*/
+
+.scrollTop {
+    position: fixed;
+    bottom: 800px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.856) url('../img/punta-de-flecha-hacia-arriba.png');
+    border-radius: 50%;
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 500;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.scrollTop.active {
+    bottom: 20px;
+    visibility: visible;
+    opacity: 1;
+}

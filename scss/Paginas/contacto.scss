@@ -1,0 +1,99 @@
+@import '../colores/colores.scss';
+
+/* primera seccion */
+
+.primera-seccion-contacto {
+    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url("../img/contacto.jpg") no-repeat center/cover;
+    background-attachment: fixed;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#primer-contenido-contacto>h1 {
+    font-family: 'montserrat', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 7px 7px 7px map-get($color, quinto);
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: map-get($color, cuarto);
+    display: flex;
+    justify-content: center;
+}
+
+/* fin de primera seccion */
+
+/*Tercera sección*/
+
+.tercera-seccion-contacto {
+    background: linear-gradient(rgba(252, 222, 190, 0.527), rgba(51, 30, 30, 0.446)), url("../img/contacto2.jpg") no-repeat center/cover;
+    color: map-get($color, quinto);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    #seccion-izq-con {
+        width: 53%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+            text-align: center;
+            background: rgba(196, 196, 196, 0.438);
+            font-weight: 500;
+            font-family: 'Montserrat', sans-serif;
+            padding: 1.5rem;
+            border-radius: 6px;
+        }
+        
+        .mapita {
+            padding: 5rem;
+        }
+        .covid {
+            width: 80%;
+        }
+    }
+
+    #seccion-der-con {
+        width: 50%;
+        .covid {
+            text-align: center;
+            color: rgb(39, 39, 39);
+            background: rgba(196, 196, 196, 0.438);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            padding: 1.5rem;
+            border-radius: 6px;
+        }
+
+        .contacto {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .form-piola {
+                color: rgba(71, 98, 207, 1);
+                font-family: 'Helvetica', sans-serif;
+                text-shadow: none;
+
+                .mb-4 {
+                    width: 70%;
+                }
+
+                .text-center {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+
+            .form-control {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+/*fin de Tercera sección*/
